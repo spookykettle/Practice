@@ -18,4 +18,3 @@ public class BergMal {
     }
 }
 
-//  System.out.print();
