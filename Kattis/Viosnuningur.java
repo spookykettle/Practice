@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//Viðsnúningur
+// Viðsnúningur
 public class Viosnuningur
 {
     public static void main(String[] args) {
