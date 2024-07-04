@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//BergMál
 public class BergMal {
 
     public static void main(String args[]) {
