@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
+// Blaðra
 public class Blaora {
     public static void main(String[] args) {
-        // Blaðra
         
         try (Scanner input = new Scanner(System.in))
         {
