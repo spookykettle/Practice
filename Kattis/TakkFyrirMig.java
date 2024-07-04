@@ -7,6 +7,7 @@ public class TakkFyrirMig {
         try (Scanner input = new Scanner(System.in))
         {
             int numberOfNames = input.nextInt();
+            @SuppressWarnings("unused") // because we don't actually use dummy varaible. The wiggly line under bothered me.
             String dummy = input.nextLine(); // put dummy here because when enter numberOfNames above, it also enter the next inpurt at the same time. (This is clearing input buffer)
             String[] inputName = new String[numberOfNames];
             
