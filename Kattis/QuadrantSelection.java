@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//Quadrant Selection
+// Quadrant Selection
 
 public class QuadrantSelection {
     public static void main(String[] args)
