@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Add Two Numbers
+// Add Two Numbers, Two-sum
 public class AddTwoNum {
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
