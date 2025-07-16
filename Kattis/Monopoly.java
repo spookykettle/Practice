@@ -3,11 +3,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// The first input consists of an integer N (1 <= N <= 11) -- the number of hotels the opponents own.
-// The second input consists of integers (2 <= A1 < .. <= 2) -- the eachtances to each of the opponents’ N hotels.
-
-// Output - decimal
-
 public class Monopoly {
     public static void main(String[] args) {
          Scanner input = new Scanner(System.in);
@@ -35,5 +30,6 @@ public class Monopoly {
         }
 
         System.out.println((count+0.0)/36.00 + 0.0000);        
+        input.close();
     }
 }
