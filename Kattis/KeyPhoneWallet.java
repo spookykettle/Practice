@@ -1,33 +1,33 @@
 // Keys, Phone, Wallet
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class KeyPhoneWallet {
     static Scanner inputt = new Scanner(System.in);
     public static void main(String[] args) {
         int things = inputt.nextInt();
-        ArrayList<String> grabbed = new ArrayList<>();
-
+        List<String> mustHave = Arrays.asList("keys", "phone", "wallet");
+        List<String> missing = new ArrayList<>();
+        Set<String> grabbed = new HashSet<>();
+    
         for(int x = 0; x <= things; x++){
-            String each = inputt.nextLine();
-            grabbed.add(each);
+            grabbed.add(inputt.nextLine());
         }
 
-        if (!grabbed.contains("keys")){
-            System.out.println("keys");
+        for (String item : mustHave){
+            if(!grabbed.contains(item)){
+                missing.add(item);
+            }
         }
-        if (!grabbed.contains("phone")){
-            System.out.println("phone");
-        }
-        if (!grabbed.contains("wallet")){
-            System.out.println("wallet");
-        }
-        if (grabbed.contains("keys") && grabbed.contains("wallet") && grabbed.contains("phone")){
+
+        if (missing.isEmpty()){
             System.out.println("ready");
         }
-
-
+        else {
+            for (String item : missing){
+                System.out.println(item);
+            }
+        }
 
     }
 }
